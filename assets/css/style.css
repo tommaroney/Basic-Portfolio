@@ -1,0 +1,75 @@
+body {
+    width: 960;
+    background-color: white;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.mainsec {
+    background-image: url("../images/background/circles-light.png");
+    padding: 20px 0;
+}
+
+.container {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: grey solid 1px;
+    *zoom: 1;
+    clear: both;
+}
+
+header::before,
+header::after {
+    content: "";
+    display: table;
+}
+
+header::after {
+    clear: both;
+}
+
+header h1 {
+    background-color: #4aaaa5;
+    color: white;
+    width: 15%;
+    margin: 2px 0 0 12.5%;
+    text-align: center;
+    line-height: 2;
+}
+
+nav {
+    float: right;
+    width: 20%;
+    line-height: 2;
+    margin: 2px 12.5% 0 0;
+    *zoom: 1;
+    clear: both;
+}
+
+nav::before,
+nav::-ms-ticks-after {
+    content: "";
+    display: table;
+}
+
+nav::after {
+    clear: both;
+}
+
+.nstyle{
+    float: right;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    border: none;
+}
