@@ -1,12 +1,29 @@
 body {
-    width: 960;
+    width: 960px;
     background-color: white;
+    margin: auto;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
-    
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #666666;
+    color: white;
+    height: 30px;
+    border-top: 5px solid #4aaaa5;
+}
+
+small {
+    padding-top: 20px;
 }
 
 .mainsec {
@@ -22,24 +39,27 @@ h1 {
 
 header {
     border-bottom: grey solid 1px;
+}
+
+.clearfix {
     *zoom: 1;
     clear: both;
 }
 
-header::before,
-header::after {
+.clearfix::before,
+.clearfix::after {
     content: "";
     display: table;
 }
 
-header::after {
+.clearfix::after {
     clear: both;
 }
 
 header h1 {
     background-color: #4aaaa5;
     color: white;
-    width: 15%;
+    width: 8em;
     margin: 2px 0 0 12.5%;
     text-align: center;
     line-height: 2;
@@ -48,24 +68,33 @@ header h1 {
 nav {
     float: right;
     width: 20%;
-    line-height: 2;
     margin: 2px 12.5% 0 0;
-    *zoom: 1;
-    clear: both;
+    line-height: 3;
 }
 
-nav::before,
-nav::-ms-ticks-after {
-    content: "";
-    display: table;
+a:link, a:visited{
+    color: grey;
+    margin: 0;
 }
 
-nav::after {
-    clear: both;
-}
-
-.nstyle{
+span.right {
     float: right;
+    padding: 0 0 0 8px;
+    margin: 0;
+}
+
+span.left {
+    float: left;
+    padding: 0 8px;
+    margin: 0;
+}
+
+span.middle {
+    margin: 0 auto;
+    padding: 0 8px;
+    line-height: 1;
+    border-left: 1px solid grey;    
+    border-right: 1px solid grey;
 }
 
 input[type=submit] {
@@ -73,3 +102,47 @@ input[type=submit] {
     color: white;
     border: none;
 }
+
+.placed {
+    position: relative;
+    float: left;
+    margin: 20px 40px 40px 0;
+}
+
+.smallbanner {
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    line-height: 1.25;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.stretch {
+    width: 100%;
+    border-bottom: 2px solid grey;
+    margin: auto;
+}
+
+.minicontainer {
+    width: 92.5%;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+.pagename {
+    line-height: 2;
+    color: #4aaaa5
+}
+
+.profilepic {
+    margin: 20px 0 20px 0;
+    width: 200px;
+}
+
+.pmargin {
+    margin: 20px 0 20px 0;
+}
+
