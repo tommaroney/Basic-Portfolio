@@ -1,7 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 body {
     width: 960px;
     background-color: white;
-    margin: auto;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+}
+
+.content {
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
 h1 {
@@ -18,8 +34,13 @@ footer {
     text-align: center;
     background-color: #666666;
     color: white;
-    height: 30px;
+    height: 50px;
     border-top: 5px solid #4aaaa5;
+    padding-top: 25px;
+}
+
+.push {
+    height: 50px;
 }
 
 small {
@@ -48,6 +69,7 @@ header {
 
 .clearfix::before,
 .clearfix::after {
+    height: 0;
     content: "";
     display: table;
 }
@@ -58,11 +80,12 @@ header {
 
 header h1 {
     background-color: #4aaaa5;
+    border-bottom: 1px solid #4aaaa5;
     color: white;
-    width: 8em;
+    width: 22%;
     margin: 2px 0 0 12.5%;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 nav {
@@ -77,30 +100,39 @@ a:link, a:visited{
     margin: 0;
 }
 
-span.right {
+div.right {
     float: right;
     padding: 0 0 0 8px;
-    margin: 0;
+    margin: 10px 0 0 0;
+    line-height: 2;
 }
 
-span.left {
-    float: left;
+div.left {
+    float: right;
     padding: 0 8px;
-    margin: 0;
+    margin: 10px 0 0 0;
+    line-height: 2;
 }
 
-span.middle {
-    margin: 0 auto;
+div.middle {
+    float: right;
+    margin: 10px 0 0 0;
     padding: 0 8px;
-    line-height: 1;
+    line-height: 2;
     border-left: 1px solid grey;    
     border-right: 1px solid grey;
 }
 
 input[type=submit] {
     background-color: #4aaaa5;
+    width: 80px;
+    height: 35px;
     color: white;
     border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #3e8e8a;
 }
 
 .placed {
@@ -146,3 +178,28 @@ input[type=submit] {
     margin: 20px 0 20px 0;
 }
 
+.contactform {
+    margin: 20px 0 0 0;
+    font-size: 18px;
+}
+
+input[type=text], .messagebox {
+    margin: 5px 0 15px 0;
+    width: 100%;
+    padding: 8px 2%;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, .messagebox:focus {
+    border: 4px solid darkgrey;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.messagebox {
+    resize: vertical;
+    height: 200px;
+}

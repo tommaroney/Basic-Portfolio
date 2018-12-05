@@ -9,32 +9,43 @@
     <title>Jason Beisiegel</title>
 </head>
 <body>
-    <header class="clearfix">
-        <nav class="clearfix">
-            <a href="index.html" class="nstyle">About</a>
-            <a href="portfolio.html" class="nstyle">Portfolio</a>
-            <a href="contact.html" class="nstyle">Contact</a>
-        </nav>
-        <h1>Jason Beisiegel</h1>
-    </header>
-    <section class="mainsec">
-        <div class="container">
-            <span class="stretch">
-                <h1 class="pagename">Contact</h1>
-            </span>
-            <form>
-                Name<br>
-                <input type="text" value="John Smith"><br>
-                Email<br>
-                <input type="text" value="example@gmail.com"><br>
-                Message<br>
-                <input type="text" value=""><br>
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </div>
-    </section>
+    <div class="content">
+        <header class="clearfix">
+                <nav class="clearfix">
+                    <div class="right">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="middle">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div class="left">
+                        <a href="index.html">About</a>
+                    </div>
+                </nav>
+            <h1>Jason Beisiegel</h1>
+        </header>
+        <section class="mainsec">
+            <div class="container">
+                <section class="minicontainer">
+                    <div class="stretch">
+                        <h1 class="pagename">Contact</h1>
+                    </div>
+                    <form class="contactform">
+                        Name<br>
+                        <input type="text" class="namebox" placeholder="John Smith"><br>
+                        Email<br>
+                        <input type="text" class="emailbox" placeholder="example@gmail.com"><br>
+                        Message<br>
+                        <textarea name="message" class="messagebox"></textarea><br>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="push"></div>
+        </section>
+    </div>
     <footer>
         <small>Copyright &copy;</small>
     </footer>
